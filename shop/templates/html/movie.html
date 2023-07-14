@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список фильмы</title>
+</head>
+<body>
+    <h1>Список фильмы</h1>
+    <ul>
+        {% for movie in movies %}
+       <li>{{movie.name}}{{movie.category}} {{movie.year_release}} {{movie.company}} {{movie.time}} {{movie.budget}} {{movie.description}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

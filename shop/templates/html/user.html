@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список пользыватель</title>
+</head>
+<body>
+    <h1>Список пользыватель</h1>
+    <ul>
+       {% for user in users %}
+       <li>{{user.first_name}} {{user.role}} {{user.login}} {{user.email}} {{user.create}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+       
